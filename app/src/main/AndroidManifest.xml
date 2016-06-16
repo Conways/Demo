@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.conways.demo">
+
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <!--Activity 注册-->
+        <activity android:name=".home.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".bdmap.BdMapActivity"/>
+        <activity android:name=".home.firstmenu.bloodpressure.BloodPressureActivity"/>
+        <activity android:name=".home.firstmenu.timewheel.TimeWheelActivity"/>
+        <activity android:name=".home.firstmenu.mbbbloodpressure.MBBBoodPressureActivity"/>
+        <activity android:name=".home.firstmenu.cardview.CardViewActivity"/>
+        <activity android:name=".home.firstmenu.sideslip.SideslipActivity"/>
+
+        <!--Service 注册-->
+        <service android:name=".home.firstmenu.bloodpressure.BPService"/>
+        <service android:name="com.iknet.iknetbluetoothlibrary.BluetoothService"></service>
+
+        <!--友盟key和推广渠道配置-->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="575117ea67e58edbd3001ef6"/>
+        <meta-data
+            android:name="UMENG_CHANNEL_VALUE"
+            android:value="${UMENG_CHANNEL_VALUE}"/>
+    </application>
+
+</manifest>

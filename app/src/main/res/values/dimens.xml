@@ -1,0 +1,23 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="horizontal_margin">@dimen/h16</dimen>
+    <dimen name="vertical_margin">@dimen/w16</dimen>
+
+
+    <dimen name="title_size">@dimen/h40</dimen>
+    <dimen name="read_long_size">@dimen/h32</dimen>
+    <dimen name="introduce_size">@dimen/h24</dimen>
+
+    <dimen name="tool_bar_height">@dimen/h96</dimen>
+    <dimen name="tool_bar_image_size">@dimen/h48</dimen>
+    <dimen name="menu_4_item_height">@dimen/h88</dimen>
+    <dimen name="menu_4_item_spacing">@dimen/h32</dimen>
+
+    <dimen name="shape_corners">@dimen/w5</dimen>
+
+    <dimen name="menu_3_item_margin">@dimen/w72</dimen>
+    <dimen name="weel_time_text_size">@dimen/h35</dimen>
+    <dimen name="weel_time_selected_text_size">@dimen/h40</dimen>
+
+
+</resources>

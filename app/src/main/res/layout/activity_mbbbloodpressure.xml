@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <include
+        layout="@layout/title_style_child_right_text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/read_long_size"
+        android:layout_marginTop="@dimen/h100"
+        android:text="value"
+        android:id="@+id/activity_mbbbloodpressure_data"
+        android:layout_gravity="center_horizontal"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h80"
+        android:layout_marginTop="@dimen/h100"
+        android:layout_marginLeft="@dimen/horizontal_margin"
+        android:layout_marginRight="@dimen/horizontal_margin"
+        android:textSize="@dimen/read_long_size"
+        android:textColor="@color/white"
+        android:text="@string/mbb_blood_pressure_start"
+        android:background="@drawable/bt_round_corner_rect_bg"
+        android:id="@+id/activity_mbbbloodpressure_start"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+
+</LinearLayout>

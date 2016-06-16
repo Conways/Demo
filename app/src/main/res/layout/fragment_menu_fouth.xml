@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/menu_4_item_spacing"
+        android:background="@color/gray_line" />
+
+    <FrameLayout
+        android:id="@+id/menu_fourth_item_1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h160"
+        android:background="@color/white"></FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/menu_4_item_spacing"
+        android:background="@color/gray_line" />
+
+    <FrameLayout
+        android:id="@+id/menu_fourth_item_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_4_item_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="@dimen/h48"
+            android:layout_height="@dimen/h48"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:src="@drawable/arrow_in" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/menu_4_item_spacing"
+        android:background="@color/gray_line" />
+
+    <FrameLayout
+        android:id="@+id/menu_fourth_item_3"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_4_item_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="@dimen/h48"
+            android:layout_height="@dimen/h48"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:src="@drawable/arrow_in" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/menu_4_item_spacing"
+        android:background="@color/gray_line" />
+
+    <FrameLayout
+        android:id="@+id/menu_fourth_item_4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_4_item_height"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="@dimen/h48"
+            android:layout_height="@dimen/h48"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:src="@drawable/arrow_in" />
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="@dimen/menu_4_item_spacing"
+        android:background="@color/gray_line" />
+
+
+    <FrameLayout
+        android:id="@+id/menu_fourth_item_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/menu_4_item_height"
+        android:background="@color/white">
+
+
+        <ImageView
+            android:layout_width="@dimen/h48"
+            android:layout_height="@dimen/h48"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="@dimen/horizontal_margin"
+            android:src="@drawable/arrow_in" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line" />
+
+</LinearLayout>

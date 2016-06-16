@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_bg"
+              android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/menu_first_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h360"
+            android:clipChildren="false"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/h30"
+            android:layout_marginRight="@dimen/w50"
+            android:orientation="horizontal">
+
+            <View
+                android:id="@+id/menu_first_node_1"
+                android:layout_width="@dimen/w20"
+                android:layout_height="@dimen/w20"
+                android:background="@drawable/circle_layout_list"/>
+
+            <View
+                android:id="@+id/menu_first_node_2"
+                android:layout_width="@dimen/w20"
+                android:layout_height="@dimen/w20"
+                android:layout_marginLeft="@dimen/w10"
+                android:background="@drawable/circle_stroke"/>
+
+            <View
+                android:id="@+id/menu_first_node_3"
+                android:layout_width="@dimen/w20"
+                android:layout_height="@dimen/w20"
+                android:layout_marginLeft="@dimen/w10"
+                android:background="@drawable/circle_stroke"/>
+
+            <View
+                android:id="@+id/menu_first_node_4"
+                android:layout_width="@dimen/w20"
+                android:layout_height="@dimen/w20"
+                android:layout_marginLeft="@dimen/w10"
+                android:background="@drawable/circle_stroke"/>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_line"/>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/menu_first_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_style_child_right_text" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_pressure_high"
+            android:textSize="@dimen/read_long_size" />
+
+        <ProgressBar
+            android:id="@+id/activity_bloodpressure_high_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="300"
+            android:progress="50" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_pressure_low"
+            android:textSize="@dimen/read_long_size" />
+
+        <ProgressBar
+            android:id="@+id/activity_bloodpressure_low_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:indeterminate="false"
+            android:max="300"
+            android:progress="50" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/horizontal_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/blood_pressure_rate"
+            android:textSize="@dimen/read_long_size" />
+
+        <ProgressBar
+            android:id="@+id/activity_bloodpressure_rate_progress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="50" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_bloodpressure_start_measure"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h80"
+        android:layout_margin="@dimen/horizontal_margin"
+        android:background="@drawable/bt_round_corner_rect_bg"
+        android:text="@string/blood_pressure_start"
+        android:textColor="@color/white"
+        android:textSize="@dimen/read_long_size" />
+
+
+</LinearLayout>
