@@ -16,6 +16,7 @@ import com.conways.demo.base.BaseFragment;
 import com.conways.demo.home.firstmenu.bloodpressure.BloodPressureActivity;
 import com.conways.demo.home.firstmenu.cardview.CardViewActivity;
 import com.conways.demo.home.firstmenu.mbbbloodpressure.MBBBoodPressureActivity;
+import com.conways.demo.home.firstmenu.notify.NotifyActivity;
 import com.conways.demo.home.firstmenu.sideslip.SideslipActivity;
 import com.conways.demo.home.firstmenu.timewheel.TimeWheelActivity;
 import com.conways.demo.utils.LogUtils;
@@ -29,9 +30,10 @@ public class MenuFirstFragment extends BaseFragment implements View.OnClickListe
     private ViewPager viewPager;
     private MyAdapter myAdapter;
 
-    private String[] list = {"康宝贝血压计", "时间选择器", "脉搏波血压计", "卡片控件", "侧滑导航"};
+    private String[] list = {"康宝贝血压计", "时间选择器", "脉搏波血压计", "卡片控件", "侧滑导航","通知栏"};
     private Class<?>[] listTarget = {BloodPressureActivity.class, TimeWheelActivity.class,
-            MBBBoodPressureActivity.class, CardViewActivity.class, SideslipActivity.class};
+            MBBBoodPressureActivity.class, CardViewActivity.class, SideslipActivity.class,
+            NotifyActivity.class};
 
     private int[] imageIds = {R.drawable.pager_1, R.drawable.pager_2, R.drawable.pager_3, R.drawable.pager_4,};
     private String urls[] = {

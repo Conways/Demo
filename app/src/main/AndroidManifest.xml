@@ -30,6 +30,7 @@
         <activity android:name=".home.firstmenu.mbbbloodpressure.MBBBoodPressureActivity"/>
         <activity android:name=".home.firstmenu.cardview.CardViewActivity"/>
         <activity android:name=".home.firstmenu.sideslip.SideslipActivity"/>
+        <activity android:name=".home.firstmenu.notify.NotifyActivity"/>
 
         <!--Service 注册-->
         <service android:name=".home.firstmenu.bloodpressure.BPService"/>

@@ -2,14 +2,12 @@
     <string name="app_name">Conways</string>
 
     <!--导航栏 -->
-
     <string name="tools_bar_menu_1">菜单1</string>
     <string name="tools_bar_menu_2">菜单2</string>
     <string name="tools_bar_menu_3">菜单3</string>
     <string name="tools_bar_menu_4">菜单4</string>
 
     <!--蓝牙血压计 -->
-
     <string name="blood_pressure_title">蓝牙血压计</string>
     <string name="blood_pressure_high">高压：</string>
     <string name="blood_pressure_low">低压：</string>
@@ -17,31 +15,33 @@
     <string name="blood_pressure_start">开始测量</string>
 
     <!--时间选择器-->
-
     <string name="time_wheel_title">时间选择器</string>
     <string name="time_wheel_year">年</string>
     <string name="time_wheel_month">月</string>
     <string name="time_wheel_day">日</string>
 
     <!--脉搏波血压计-->
-
     <string name="mbb_blood_pressure_title">脉搏波血压计</string>
     <string name="mbb_blood_pressure_start">开始测量</string>
     <string name="mbb_blood_pressure_restart">重新测量</string>
 
 
     <!--卡片视图-->
-
     <string name="card_view_title">卡片视图</string>
     <string name="card_view_intruduce">呈现一个图片沉浸视图</string>
     <string name="card_view_first">第一个视图</string>
     <string name="card_view_second">第二个视图</string>
 
-
     <!--侧滑导航-->
-
     <string name="side_slip_title">侧滑导航</string>
     <string name="side_slip_introduce">点击或从左边界滑动可以展现侧滑视图</string>
+
+    <!--通知栏-->
+    <string name="notify_title">通知栏</string>
+    <string name="notify_notify_title">Title</string>
+    <string name="notify_notify_content">Content</string>
+    <string name="notify_notify_ticker">Msg</string>
+    <string name="notify_notify_send">发送一个通知</string>
 
 
 </resources>
