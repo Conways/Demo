@@ -7,9 +7,16 @@ import com.conways.demo.base.BaseTitleActivity;
 /**
  * Created by user on 2016/6/16.
  */
-public class NotifyActivity extends BaseTitleActivity{
+public class NotifyActivity extends BaseTitleActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
+        init();
+    }
+
+
+    private void init() {
+
     }
 }
