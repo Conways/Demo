@@ -10,9 +10,13 @@ import com.conways.demo.base.BaseTitleActivity;
 public class NotifyActivity extends BaseTitleActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
+        initTitle();
         init();
+    }
+
+    private void initTitle() {
+
     }
 
 
