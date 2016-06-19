@@ -9,4 +9,14 @@
         <item name="android:actionBarTabBarStyle">@android:style/Theme.NoTitleBar</item>
     </style>
 
+    <style name="button_style">
+        <item name="android:textSize">@dimen/read_long_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/h80</item>
+        <item name="android:layout_marginLeft">@dimen/horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/horizontal_margin</item>
+        <item name="android:background">@drawable/bt_round_corner_rect_bg</item>
+    </style>
+
 </resources>

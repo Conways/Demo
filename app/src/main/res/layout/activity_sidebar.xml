@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/gray_bg"
+              android:orientation="vertical">
+
+    <include layout="@layout/title_style_child_right_text"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.conways.demo.home.firstmenu.sidebar.sidebarwiget.SideBar
+            android:id="@+id/activity_sidebar_sidebar"
+            android:layout_width="@dimen/w50"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"/>
+
+        <TextView
+            android:id="@+id/activity_sidebar_value"
+            android:layout_width="@dimen/screenWith1_3"
+            android:layout_height="@dimen/screenWith1_3"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_stroke"
+            android:gravity="center"
+            android:textColor="@color/main_color"
+            android:textSize="@dimen/title_size"/>
+    </FrameLayout>
+
+
+</LinearLayout>
