@@ -17,6 +17,7 @@ import com.conways.demo.home.firstmenu.mbbbloodpressure.MBBBoodPressureActivity;
 import com.conways.demo.home.firstmenu.notify.NotifyActivity;
 import com.conways.demo.home.firstmenu.sidebar.SideBarActivity;
 import com.conways.demo.home.firstmenu.sideslip.SideslipActivity;
+import com.conways.demo.home.firstmenu.sqlite.SqliteActivity;
 import com.conways.demo.home.firstmenu.timewheel.TimeWheelActivity;
 
 /**
@@ -28,14 +29,14 @@ public class MenuFirstFragment extends BaseFragment implements View.OnClickListe
     private ViewPager viewPager;
     private MyAdapter myAdapter;
 
-    private String[] list = {"康宝贝血压计", "时间选择器", "脉搏波血压计", "卡片控件", "侧滑导航","通知栏","侧边栏"};
+    private String[] list = {"康宝贝血压计", "时间选择器", "脉搏波血压计", "卡片控件", "侧滑导航", "通知栏", "侧边栏","数据库"};
     private Class<?>[] listTarget = {BloodPressureActivity.class, TimeWheelActivity.class,
             MBBBoodPressureActivity.class, CardViewActivity.class, SideslipActivity.class,
-            NotifyActivity.class, SideBarActivity.class};
+            NotifyActivity.class, SideBarActivity.class, SqliteActivity.class};
 
     private int[] imageIds = {R.drawable.pager_1, R.drawable.pager_2, R.drawable.pager_3, R.drawable.pager_4,};
     private String urls[] = {
-            "http://pic.58pic.com/58pic/15/13/97/52i58PICnaB_1024.jpg" ,
+            "http://pic.58pic.com/58pic/15/13/97/52i58PICnaB_1024.jpg",
             "http://www.leewiart.com/userfiles/18573/1756b215a1834ac2a831020e54884853.jpg?635529900812812500",
             "http://imgsrc.baidu.com/forum/pic/item/f697f2d3572c11df73873098622762d0f603c282.jpg",
             "http://pic41.nipic.com/20140515/18758466_100750604144_2.jpg"};
@@ -56,7 +57,7 @@ public class MenuFirstFragment extends BaseFragment implements View.OnClickListe
     private void init(View view) {
         viewPager = (ViewPager) view.findViewById(R.id.menu_first_viewPager);
         viewPager.setOffscreenPageLimit(3);
-        viewPager.setAdapter(new ViewPagerAdapter(context, imageIds,urls) {
+        viewPager.setAdapter(new ViewPagerAdapter(context, imageIds, urls) {
         });
         viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override

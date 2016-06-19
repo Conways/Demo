@@ -47,5 +47,8 @@
 
     <string name="sidebar_title">侧边栏</string>
 
+    <!--数据库-->
+    <string name="sqlite_title">数据库</string>
+
 
 </resources>
