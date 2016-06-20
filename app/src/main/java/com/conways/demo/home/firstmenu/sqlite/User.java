@@ -20,6 +20,9 @@ public class User extends BaseModel {
         this.head = head;
     }
 
+    public User() {
+    }
+
     public int getId() {
         return id;
     }

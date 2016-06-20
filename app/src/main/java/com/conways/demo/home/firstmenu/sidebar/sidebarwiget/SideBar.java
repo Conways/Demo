@@ -13,8 +13,6 @@ import android.view.View;
  */
 public class SideBar extends View {
 
-    private static final int paddingTop = 20;
-    private static final int paddingBottom = 20;
     private int mChoose = -1;
 
     private Paint paintBg;
@@ -47,10 +45,9 @@ public class SideBar extends View {
         paintBg = new Paint();
         paintBg.setColor(0x00ff00ff);
         paintText = new Paint();
-        paintText.setTextSize(20f);
+        paintText.setTextSize(PxUtil.dip2px(getContext(),10));
         paintText.setColor(0xffed6d35);
-
-
+        paintText.setAntiAlias(true);
     }
 
 
@@ -119,7 +116,7 @@ public class SideBar extends View {
                     if (onSideBarTouchListener != null) {
                         onSideBarTouchListener.onLetterTouching(false);
                     }
-                } else if (event.getAction() == MotionEvent.ACTION_DOWN) {//按下调用 onLetterDownListener
+                } else if (event.getAction() == MotionEvent.ACTION_DOWN) {
                     if (onSideBarTouchListener != null) {
                         onSideBarTouchListener.onLetterTouching(true);
                     }

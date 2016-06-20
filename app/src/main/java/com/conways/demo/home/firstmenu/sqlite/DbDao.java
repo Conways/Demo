@@ -35,21 +35,20 @@ public class DbDao {
     /*
     * 插入一个user
     * */
-    public User addUser(User user) {
+    public boolean addUser(User user) {
         try {
             openDB();
             ContentValues values = new ContentValues();
-            values.put(DbConstants.USER_ID, getLastInsertRowId() + 1);
+//            values.put(DbConstants.USER_ID, getLastInsertRowId() + 1);
             values.put(DbConstants.USER_NAME, user.getName());
             values.put(DbConstants.USER_BIRTHDAY, user.getBirthday());
             values.put(DbConstants.USER_SEX, user.getSex());
             values.put(DbConstants.USER_INTRODUCE, user.getIntroduce());
             values.put(DbConstants.USER_HEAD, user.getHead());
-            database.insert(DbConstants.TABLE_USER, "id", values);
+            return database.insert(DbConstants.TABLE_USER, "id", values) != -1;
         } finally {
             closeDB();
         }
-        return null;
     }
     /*
     * 查询所有的user记录
@@ -95,27 +94,9 @@ public class DbDao {
 
 
     private void closeDB() {
-        if (database != null) {
-            database.close();
-        }
+        database = null;
     }
 
-
-    private int getLastInsertRowId() {
-        String sql = "SELECT last_insert_rowid();";
-        Cursor cursor = database.rawQuery(sql, null);
-        if (cursor != null) {
-            try {
-                if (cursor.getCount() > 0) {
-                    cursor.moveToFirst();
-                    return cursor.getInt(0);
-                }
-            } finally {
-                cursor.close();
-            }
-        }
-        return -1;
-    }
 
 
 }
