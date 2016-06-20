@@ -21,7 +21,6 @@ public class SqliteActivity extends BaseTitleActivity implements View.OnClickLis
     private void initTitle() {
         tvTitleTitle.setText(getText(R.string.sqlite_title));
         ivTitleBack.setOnClickListener(this);
-
     }
 
     @Override

@@ -6,7 +6,11 @@ package com.conways.demo.home.firstmenu.sqlite;
 public class DbConstants {
 
     public static final String DB_NAME = "conways";
+    /*
+    * user表
+    * */
     public static final String TABLE_USER = "user";
+
     public static final String USER_ID = "id";
     public static final String USER_NAME = "name";
     public static final String USER_BIRTHDAY = "birthday";

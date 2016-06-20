@@ -101,7 +101,7 @@ public class DbDao {
     }
 
 
-    public int getLastInsertRowId() {
+    private int getLastInsertRowId() {
         String sql = "SELECT last_insert_rowid();";
         Cursor cursor = database.rawQuery(sql, null);
         if (cursor != null) {
