@@ -17,9 +17,9 @@ public class DbConstants {
 
     public static final String SQ_OF_CREATE_USER_TABLE = "create table " + TABLE_USER + "(" +
             USER_ID + " integer primary key autoincrement, " +
-            USER_NAME + " text" +
-            USER_BIRTHDAY + " long" +
-            USER_SEX + " integer" +
-            USER_INTRODUCE + " text" +
+            USER_NAME + " text," +
+            USER_BIRTHDAY + " long," +
+            USER_SEX + " integer," +
+            USER_INTRODUCE + " text," +
             USER_HEAD + " text)";
 }

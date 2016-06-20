@@ -49,6 +49,18 @@
 
     <!--数据库-->
     <string name="sqlite_title">数据库</string>
+    <string name="sqlite_aciton">添加</string>
+
+    <!--添加用户-->
+    <string name="adduser_title">添加一个用户</string>
+    <string name="adduser_sex_male">男</string>
+    <string name="adduser_sex_female">女</string>
+    <string name="adduser_name">名字</string>
+    <string name="adduser_introduce">简介</string>
+    <string name="adduser_save">保存</string>
+    <string name="adduser_keep_msg_perfect">请保持消息完整</string>
+    <string name="adduser_save_seccuss">保存成功</string>
+    <string name="adduser_save_failed">保存失败</string>
 
 
 </resources>

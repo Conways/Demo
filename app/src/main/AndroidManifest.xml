@@ -34,6 +34,7 @@
         <activity android:name=".home.firstmenu.notify.NotifyActivity"/>
         <activity android:name=".home.firstmenu.sidebar.SideBarActivity"/>
         <activity android:name=".home.firstmenu.sqlite.SqliteActivity"/>
+        <activity android:name=".home.firstmenu.sqlite.AddUserActivity"/>
 
         <!--Service 注册-->
         <service android:name=".home.firstmenu.bloodpressure.BPService"/>
