@@ -86,6 +86,22 @@ public class DbDao {
         return users;
     }
 
+    /*
+    * 根据id删除一条记录
+    * */
+
+    public boolean deleteUserById(int id) {
+        try {
+            openDB();
+            String[] value = {String.valueOf(id)};
+            return database.delete(DbConstants.TABLE_USER, DbConstants.USER_ID + "=?", value) != 0;
+        } finally {
+            closeDB();
+        }
+
+
+    }
+
     private void openDB() {
         if (database == null) {
             database = dbHelper.getWritableDatabase();
@@ -96,7 +112,6 @@ public class DbDao {
     private void closeDB() {
         database = null;
     }
-
 
 
 }

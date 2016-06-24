@@ -62,5 +62,12 @@
     <string name="adduser_save_seccuss">保存成功</string>
     <string name="adduser_save_failed">保存失败</string>
 
+    <!--提示框-->
+
+    <string name="dialog_title">提示</string>
+    <string name="dialog_body">要删除么？</string>
+    <string name="dialog_bt_ok">好的</string>
+    <string name="dialog_bt_cancel">取消</string>
+
 
 </resources>
