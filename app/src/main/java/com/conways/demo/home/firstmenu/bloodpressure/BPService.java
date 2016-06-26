@@ -93,6 +93,7 @@ public class BPService extends Service {
                 case BluetoothProfile.STATE_CONNECTED:
                     LogUtils.d("BPService", "连接建立");
                     connect = true;
+                    bluetoothGatt.discoverServices();
                     broadcast(BPContants.ACTION_STATE_CONNECT);
                     break;
                 case BluetoothProfile.STATE_DISCONNECTED:
