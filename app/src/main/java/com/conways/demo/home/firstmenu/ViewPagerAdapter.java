@@ -20,13 +20,11 @@ public class ViewPagerAdapter extends PagerAdapter{
     private Context context;
     private int[] imageId;
     private String[] urls;
-    private ImageLoader imageLoader;
 
     public ViewPagerAdapter(Context context, int[] imageId, String[] urls) {
         this.context = context;
         this.imageId = imageId;
         this.urls = urls;
-        imageLoader=ImageLoader.getInstance();
     }
 
 
@@ -52,27 +50,6 @@ public class ViewPagerAdapter extends PagerAdapter{
         ImageView imageView=new ImageView(context);
         imageView.setScaleType(ImageView.ScaleType.FIT_XY);
         imageView.setImageResource(imageId[position]);
-        imageLoader.displayImage(urls[position], imageView, new ImageLoadingListener() {
-            @Override
-            public void onLoadingStarted(String s, View view) {
-
-            }
-
-            @Override
-            public void onLoadingFailed(String s, View view, FailReason failReason) {
-
-            }
-
-            @Override
-            public void onLoadingComplete(String s, View view, Bitmap bitmap) {
-
-            }
-
-            @Override
-            public void onLoadingCancelled(String s, View view) {
-
-            }
-        });
         container.addView(imageView);
         return imageView;
 

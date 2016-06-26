@@ -11,6 +11,8 @@
         android:layout_height="@dimen/w120"
         android:layout_gravity="center_vertical"
         android:layout_marginLeft="@dimen/horizontal_margin"
+        android:background="@color/main_color"
+        android:elevation="10dp"
         android:src="@mipmap/ic_launcher"/>
 
     <LinearLayout
