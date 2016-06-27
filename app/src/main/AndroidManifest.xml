@@ -12,7 +12,7 @@
 
 
     <application
-        android:name=".DemoApplication"
+        android:name=".home.firstmenu.timewheel.DemoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -20,7 +20,8 @@
 
         <!--Activity 注册-->
 
-        <activity android:name=".SplashActivity"
+        <activity
+            android:name=".SplashActivity"
             android:theme="@style/ThemeSplash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -38,6 +39,7 @@
         <activity android:name=".home.firstmenu.sidebar.SideBarActivity"/>
         <activity android:name=".home.firstmenu.sqlite.SqliteActivity"/>
         <activity android:name=".home.firstmenu.sqlite.AddUserActivity"/>
+        <activity android:name=".home.firstmenu.bigsizeImage.BigImageActivity"/>
 
         <!--Service 注册-->
         <service android:name=".home.firstmenu.bloodpressure.BPService"/>

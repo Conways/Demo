@@ -70,4 +70,10 @@
     <string name="dialog_bt_cancel">取消</string>
 
 
+    <!--加载大图-->
+
+    <string name="bigimage_title">加载大图</string>
+    <string name="bigimage_image_size">尺寸：</string>
+
+
 </resources>

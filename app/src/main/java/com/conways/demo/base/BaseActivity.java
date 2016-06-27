@@ -4,12 +4,9 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
 import android.widget.Toast;
 
-import com.conways.demo.DemoApplication;
-import com.conways.demo.R;
+import com.conways.demo.home.firstmenu.timewheel.DemoApplication;
 import com.conways.demo.utils.LogUtils;
 import com.umeng.analytics.MobclickAgent;
 

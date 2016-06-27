@@ -1,4 +1,4 @@
-package com.conways.demo;
+package com.conways.demo.home.firstmenu.timewheel;
 
 import android.app.Application;
 
@@ -31,7 +31,7 @@ public class DemoApplication extends Application {
         LogUtils.isDebugModel(true);
     }
 
-    private void initUmeng(){
+    private void initUmeng() {
         MobclickAgent.setScenarioType(this, MobclickAgent.EScenarioType.E_UM_NORMAL);
     }
 

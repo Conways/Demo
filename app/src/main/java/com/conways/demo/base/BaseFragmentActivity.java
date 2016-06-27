@@ -7,8 +7,7 @@ import android.os.PersistableBundle;
 import android.support.v4.app.FragmentActivity;
 import android.widget.Toast;
 
-import com.conways.demo.DemoApplication;
-import com.conways.demo.R;
+import com.conways.demo.home.firstmenu.timewheel.DemoApplication;
 import com.umeng.analytics.MobclickAgent;
 
 /**

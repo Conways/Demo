@@ -11,6 +11,7 @@ import android.view.ViewGroup;
 
 import com.conways.demo.R;
 import com.conways.demo.base.BaseFragment;
+import com.conways.demo.home.firstmenu.bigsizeImage.BigImageActivity;
 import com.conways.demo.home.firstmenu.bloodpressure.BloodPressureActivity;
 import com.conways.demo.home.firstmenu.cardview.CardViewActivity;
 import com.conways.demo.home.firstmenu.mbbbloodpressure.MBBBoodPressureActivity;
@@ -29,10 +30,11 @@ public class MenuFirstFragment extends BaseFragment implements View.OnClickListe
     private ViewPager viewPager;
     private MyAdapter myAdapter;
 
-    private String[] list = {"康宝贝血压计", "时间选择器", "脉搏波血压计", "卡片控件", "侧滑导航", "通知栏", "侧边栏","数据库"};
+    private String[] list = {"康宝贝血压计", "时间选择器", "脉搏波血压计", "卡片控件", "侧滑导航", "通知栏", "侧边栏", "数据库",
+            "加载大图片"};
     private Class<?>[] listTarget = {BloodPressureActivity.class, TimeWheelActivity.class,
             MBBBoodPressureActivity.class, CardViewActivity.class, SideslipActivity.class,
-            NotifyActivity.class, SideBarActivity.class, SqliteActivity.class};
+            NotifyActivity.class, SideBarActivity.class, SqliteActivity.class, BigImageActivity.class};
 
     private int[] imageIds = {R.drawable.pager_1, R.drawable.pager_2, R.drawable.pager_3, R.drawable.pager_4,};
     private String urls[] = {
