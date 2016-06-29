@@ -40,6 +40,7 @@
         <activity android:name=".home.firstmenu.sqlite.SqliteActivity"/>
         <activity android:name=".home.firstmenu.sqlite.AddUserActivity"/>
         <activity android:name=".home.firstmenu.bigsizeImage.BigImageActivity"/>
+        <activity android:name=".home.firstmenu.retrofit.RetrofitActivity"/>
 
         <!--Service 注册-->
         <service android:name=".home.firstmenu.bloodpressure.BPService"/>
