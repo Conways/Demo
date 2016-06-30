@@ -76,4 +76,7 @@
     <string name="bigimage_image_size">尺寸：</string>
 
 
+    <!--linechart-->
+    <string name="linechart_title">linechart</string>
+
 </resources>

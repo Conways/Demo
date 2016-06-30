@@ -41,6 +41,7 @@
         <activity android:name=".home.firstmenu.sqlite.AddUserActivity"/>
         <activity android:name=".home.firstmenu.bigsizeImage.BigImageActivity"/>
         <activity android:name=".home.firstmenu.retrofit.RetrofitActivity"/>
+        <activity android:name=".home.firstmenu.linechart.LineChartActivity"/>
 
         <!--Service 注册-->
         <service android:name=".home.firstmenu.bloodpressure.BPService"/>
